@@ -5,7 +5,7 @@ def get_current_datetime():
 
 def display_current_datetime():
     current_date = get_current_datetime()
-    print(current_date.strftime("%d-%m-%Y %H:%M:%S"))
+    print(current_date.strftime("%Y-%m-%d %H:%M:%S"))
 
 def calculate_future_date():
     current_date = get_current_datetime()
