@@ -16,12 +16,11 @@ class BankAccount:
             return False
         else:
             self.account_balance -= amount
-            print(f"Withdrew ${amount:.2f}. Current Balance is ${self.account_balance:.2f}")
+            print(f"Withdrew ${amount:.2f}. Current balance is ${self.account_balance:.2f}")
             return True
-  
-
     def display_balance(self):
-        """Display the Current Balance in a user-friendly format"""
-    
-        print(f"Current balance: ${self.account_balance:.2f}")
+        """Display the current balance in a user-friendly format"""
+        print(f"Current Balance: ${self.account_balance:.2f}")
+
+
 
