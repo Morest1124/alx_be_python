@@ -10,6 +10,13 @@ class Book:
 
     def set_is_checked_out(self, value):
         self._is_checked_out = value
+    
+    def return_book(self, value):
+        self.return_book = value
+    
+    def setlist_available_books(self, value):
+        self.list_available_books = value
+
 
 
 class Library:
