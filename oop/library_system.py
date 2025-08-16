@@ -13,19 +13,21 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
 
+
 class Library:
-    def __init__(self):
+    def __init__(self) -> None:
         self.books = []
 
-    def add_book(self, book):
+    def add_book(self, book) -> None:
         self.books.append(book)
 
     def list_books(self):
         for book in self.books:
-            print(f"Title: {book.title}, Author: {book.author}")
             if isinstance(book, EBook):
-                print(f"File Size: {book.file_size}")
+                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}")
             elif isinstance(book, PrintBook):
-                print(f"Page Count: {book.page_count}")
-            print()
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
+            else:
+                print(f"Book: {book.title} by {book.author}")
+
 
